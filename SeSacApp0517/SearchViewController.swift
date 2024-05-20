@@ -72,23 +72,10 @@ class SearchViewController: UIViewController {
     
     
     @IBAction func wordButtonTapped(_ sender: UIButton) {
-        searchTextField.text = newWordArray[0][0]
+        print(sender.tag)
+        searchTextField.text = newWordArray[sender.tag][0]
     }
-    @IBAction func wordButtonTapped2(_ sender: UIButton) {
-        searchTextField.text = newWordArray[1][0]
-    }
-    @IBAction func wordButtonTapped3(_ sender: UIButton) {
-        searchTextField.text = newWordArray[2][0]
-    }
-    @IBAction func wordButtonTapped4(_ sender: UIButton) {
-        searchTextField.text = newWordArray[3][0]
-    }
-    @IBAction func wordButtonTapped5(_ sender: UIButton) {
-        searchTextField.text = newWordArray[4][0]
-    }
-    @IBAction func wordButtonTapped6(_ sender: UIButton) {
-        searchTextField.text = newWordArray[5][0]
-    }
+
     
     // 배열 활용
     @IBAction func searchButtonTapped(_ sender: UIButton) {
